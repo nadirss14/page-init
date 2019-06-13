@@ -48,6 +48,7 @@ strong  {
     height: auto;
     background: var(--main-bg);
 } 
+
 .main-content {
     width: 99%;
     height: inherit;
@@ -59,7 +60,7 @@ strong  {
 
 .table-content {
     margin-top: 20px;
-    height: 400px;
+    height: inherit;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -68,10 +69,11 @@ strong  {
 }
 
 .table-div {
+    margin-top: 20px;
     width: 50%;
     height: 80%;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     border-radius: 10px;
@@ -80,6 +82,7 @@ strong  {
 }
 
 .table-detail {
+    margin-top: 20px;
     width: 300px;
     height: 90%;
     background: var(--font-color-w);
