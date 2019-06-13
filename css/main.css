@@ -83,6 +83,7 @@ strong  {
 
 .table-detail {
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 300px;
     height: 90%;
     background: var(--font-color-w);
