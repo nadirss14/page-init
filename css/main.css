@@ -4,7 +4,7 @@
     --nav-bg: #1c313a;
     --main-bg: whitesmoke;
     --font-color: black;
-
+    --font-color-w: white;
   }
 * {
     background: var(--main-bg);
@@ -12,7 +12,7 @@
     padding: 0px;
     border: 0px;
     font-family: 'Roboto', cursive;
-    color:var(--font-color);
+    color: var(--font-color);
 }   
 
 h1,
@@ -20,6 +20,9 @@ h2,
 h3,
 h4,
 h5,
+h6,
+ul,
+ol,
 li,
 strong  {
     background: inherit;
@@ -28,16 +31,16 @@ strong  {
 .main-nav {
     background: var(--nav-bg);
     padding: 20px;
-    color: white;
+    color: var(--font-color-w);
     text-align: center;
 }
 
 .main-nav h1 { 
-    color: white;
+    color: var(--font-color-w);
     font-size: xx-large;
 }
 .main-nav h3 {
-    color: white;
+    color: var(--font-color-w);
     font-size: x-large;
 }
 .main{
@@ -52,13 +55,41 @@ strong  {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-   
 }
 
+.table-content {
+    margin-top: 20px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--nav-bg);
+}
+
+.table-div {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    background: inherit;
+    border-radius: 5px;
+}
+
+.table-detail {
+    width: 300px;
+    height: 90%;
+    background: var(--font-color-w);
+    border: 1px solid var( --primary-color);
+    border-radius: 5px;
+}
 .main-content-detail {
     padding: 3px;
     width: 300px;
-    height: 500px;
+    height: 450px;
     margin-top: 10px;
     border: 2px solid  var(--primary-color);
     border-radius: 20px;
@@ -79,7 +110,7 @@ strong  {
     height: 120px;
     margin-top: 10px;
     background: var(--nav-bg);
-    color: white;
+    color: var(--font-color-w);
     border-radius: 90px;
     display: flex;
     flex-wrap: nowrap;
@@ -87,6 +118,19 @@ strong  {
     justify-content: center;
 }
 
+.circle-white {
+    width: 250px;
+    height: 250px;
+    margin-top: 10px;
+    color: var(--nav-bg);
+    background: var(--font-color-w);
+    border: 1px solid var( --primary-color);
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
 .circle h2 {
     color: inherit;
 }
@@ -119,6 +163,5 @@ ol {
     list-style: none;
 }
 
-table {
-    border: 1px solid black;
-}
+
+    
